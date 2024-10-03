@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1c1c1c, #4e4e4e);
+    color: white;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00ff80;
+}
+
+.calendar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff80;
+    background: #444;
+    color: #fff;
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+.time-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.time-field {
+    flex: 1;
+    margin: 0 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff80;
+    background: #444;
+    color: #fff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px;
+    flex: 1;
+    margin: 0 5px;
+    background-color: #00ff80;
+    border: none;
+    border-radius: 5px;
+    color: #1c1c1c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #00cc66;
+    transform: scale(1.05);
+}
+
+.countdown-display {
+    margin-top: 30px;
+}
+
+#countdown {
+    font-size: 48px;
+    color: #00ff80;
+    font-weight: bold;
+}
